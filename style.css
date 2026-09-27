@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #05080d;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c99a2e;
+}
+nav h2 {
+    color: #d4af37;
+    font-size: 28px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(
+        90deg,
+        #05080d 0%,
+        #0b1724 55%,
+        #05080d 100%
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin: 0;
+    color: #d4af37;
+    letter-spacing: 5px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin: 5px 0 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.frase {
+    font-size: 16px !important;
+    letter-spacing: 0 !important;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.hero-buttons a {
+    padding: 14px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-principal {
+    background: #d4af37;
+    color: #05080d;
+}
+
+.btn-secundario {
+    border: 1px solid #d4af37;
+    color: white;
+}
+
+.hero {
+    min-height: 600px;
+    background: url("hero.webp") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+    background: #05080d;
+}
+
+.card {
+    width: 280px;
+    padding: 30px;
+    background: rgba(10, 15, 25, 0.95);
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
