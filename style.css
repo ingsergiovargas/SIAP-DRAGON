@@ -41,10 +41,10 @@ nav a:hover {
     color: #d4af37;
 }
 .hero {
-    min-height: 520px;
+    min-height: 620px
     display: flex;
     align-items: center;
-    padding: 60px 8%;
+    padding: 60px;
     background: linear-gradient(
         90deg,
         #05080d 0%,
@@ -60,15 +60,32 @@ nav a:hover {
 .hero h1 {
     font-size: 80px;
     margin: 0;
-    color: #d4af37;
     letter-spacing: 5px;
+    font-weight: 900;
+
+    color: #d4af37;
+
+    text-shadow:
+        0 1px 0 #fff3a6,
+        0 2px 0 #d4af37,
+        0 3px 0 #b8860b,
+        0 4px 5px rgba(0, 0, 0, 0.8);
 }
 
 .hero h2 {
     font-size: 42px;
     margin: 5px 0 20px;
-    color: white;
+    font-weight: 900;
+
+    color: #f2f2f2;
+
+    text-shadow:
+        0 1px 0 #ffffff,
+        0 2px 0 #bdbdbd,
+        0 3px 0 #777777,
+        0 4px 5px rgba(0, 0, 0, 0.8);
 }
+
 
 .hero p {
     font-size: 18px;
@@ -105,13 +122,18 @@ nav a:hover {
     color: white;
 }
 
-.hero {
-    min-height: 600px;
-    background: url("hero.webp") center center / cover no-repeat;
-    display: flex;
+
+   .hero {
+    min-height: 700px;
+    background: url("hero.webp");
+    background-position: center top;
+    background-size; cover;
+    background-repeat: no-repeat;
+        display: flex;
     align-items: center;
-    padding: 60px;
+    padding: 60px 80px;
     position: relative;
+
 }
 
 .hero-content {
@@ -151,3 +173,602 @@ nav a:hover {
     font-size: 15px;
     line-height: 1.5;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 80%;
+}
+
+   .logo-text h2 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 900;
+
+    background: linear-gradient(
+    180deg,
+    #d2b210 0%,
+    #d4af37 20%,
+    #d69d0b 45%,
+    #f5d76e 60%,
+    #b8860b 78%,
+    #ebba1a 100%
+);
+        
+   
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow:
+        0 1px 1px rgba(255,255,255,0.5),
+        0 2px 3px rgba(0,0,0,0.8);
+}
+
+.logo-text span {
+    display: block;
+    color: white;
+    font-size: 11px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+/* =========================
+   GALERÍA DEL OPERATIVO
+   ========================= */
+
+.galeria {
+    padding: 70px 5%;
+    background: #05080d;
+}
+
+.galeria-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+
+.galeria-titulo h2 {
+    margin: 0;
+    font-size: 38px;
+    color: #d4af37;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.galeria-titulo h2 span {
+    color: white;
+}
+
+.galeria-titulo p {
+    margin-top: 8px;
+    color: #cfcfcf;
+    font-size: 16px;
+}
+
+.btn-galeria {
+    padding: 14px 25px;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-galeria:hover {
+    background: #d4af37;
+    color: #05080d;
+}
+
+/* GRID DE IMÁGENES */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.galeria-item {
+    height: 170px;
+    overflow: hidden;
+    border: 1px solid #8a6508;
+    border-radius: 7px;
+    background: #080b10;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.08);
+}
+/* =========================================
+   SECCIÓN OPERATIVO DRAGÓN
+   ========================================= */
+
+.operativo-dragon {
+    width: 100%;
+    min-height: 200px;
+
+    display: grid;
+    grid-template-columns: 1FR 1FR;
+    background: #03080d;
+    border-top: 1px solid #d4af37;
+    border-bottom: 1px solid #d4af37;
+    overflow: hidden;
+}
+
+/* IMAGEN POLICIAL */
+
+.operativo-imagen {
+    height: 500px;
+    overflow: hidden;
+}
+
+.operativo-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTENIDO */
+
+.operativo-contenido {
+    padding: 45px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #03080d;
+}
+
+.operativo-contenido span {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.operativo-contenido h2 {
+    margin: 0 0 18px;
+    color: #d4af37;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.operativo-contenido p {
+    max-width: 620px;
+    color: #eeeeee;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* BOTÓN */
+
+.btn-operativo {
+    width: fit-content;
+    padding: 14px 28px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-operativo:hover {
+    background: #d4af37;
+    color: #05080d;
+}
+
+/* DRAGÓN */
+
+.operativo-dragon-img {
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #03080d;
+}
+
+.operativo-dragon-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .operativo-dragon {
+        grid-template-columns: 1fr;
+    }
+
+    .operativo-imagen {
+        height: 280px;
+    }
+
+    .operativo-contenido {
+        padding: 40px 25px;
+    }
+
+    .operativo-contenido h2 {
+        font-size: 32px;
+    }
+
+    .operativo-dragon-img {
+        height: 280px;
+    }
+}
+/* =========================================
+   OPERATIVO DRAGÓN
+   UNA SOLA IMAGEN
+========================================= */
+
+.operativo-dragon {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: #000;
+
+}
+
+/* UNA SOLA IMAGEN DE EXTREMO A EXTREMO */
+.operativo-fondo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 1;
+}
+
+/* CAPA PARA EL TEXTO */
+.operativo-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+/* TEXTO EN LA ZONA CENTRAL-DERECHA */
+.operativo-texto {
+    position: absolute;
+
+    left: 58%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 34%;
+    max-width: 520px;
+
+    color: white;
+    text-align: left;
+}
+
+/* SOBRE EL */
+.operativo-texto .sobre {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+
+    color: white;
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* OPERATIVO DRAGÓN */
+.operativo-texto h2 {
+    margin: 0 0 22px 0;
+
+    font-size: 44px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #d4af37;
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9),
+        0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+/* DESCRIPCIÓN */
+.operativo-texto p {
+    max-width: 500px;
+
+    margin: 0 0 25px 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: white;
+
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* BOTÓN */
+.btn-operativo {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    transition: 0.3s;
+}
+
+.btn-operativo:hover {
+    background: #d4af37;
+    color: #000;
+
+    box-shadow:
+        0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+
+main > section {
+    margin-bottom: 0px;
+}
+
+/* Espacio debajo de la galería */
+.galeria {
+    margin-bottom: 0px;
+}
+
+/* Espacio alrededor del Operativo Dragón */
+.operativo-dragon {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Espacio entre las tarjetas y la galería */
+.galeria-contenedor {
+    margin-bottom: 0;
+}
+
+
+footer {
+    margin-top: -50px;
+}
+
+
+.footer {
+    width: 100%;
+    background: #05080d;
+    border-top: 1px solid #d4af37;
+    padding: 35px 60px 20px;
+
+    display: grid;
+    grid-template-columns: 1.3fr 2fr 0.7fr;
+    align-items: center;
+    gap: 30px;
+
+    color: white;
+}
+
+/* LOGO */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    color: #d4af37;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.footer-logo span {
+    color: white;
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+
+/* MENÚ */
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #d4af37;
+}
+
+
+
+
+.footer-redes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.footer-redes a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-redes a:hover {
+    color: #d4af37;
+    transform: scale(1.15);
+}
+.footer-menu a {
+    margin-left: 150px;
+}
+
+
+
+
+.footer-copy {
+    grid-column: 1 / -1;
+    text-align: right;
+    border-top: 1px solid rgba(212, 175, 55, 0.25);
+    padding-top: 15px;
+    margin-top: 5px;
+
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.operativo-dragon {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ELIMINAR ESPACIOS LATERALES DEL CONTENIDO */
+main {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.operativo-dragon {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-menu p {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+}
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    .operativo-dragon {
+        height: 500px;
+    }
+
+    .operativo-fondo {
+        object-position: center center;
+    }
+
+    .operativo-texto {
+        left: 52%;
+        top: 50%;
+
+        width: 43%;
+    }
+
+    .operativo-texto .sobre {
+        font-size: 13px;
+    }
+
+    .operativo-texto h2 {
+        font-size: 28px;
+    }
+
+    .operativo-texto p {
+        font-size: 12px;
+    }
+
+    .btn-operativo {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
